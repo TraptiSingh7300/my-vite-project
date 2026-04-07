@@ -1,0 +1,14 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const BannerBox = (props) => {
+  return (
+    <div className="box overflow-hidden rounded-lg group">
+      <Link to="/">
+        <img src={props.img} className="w-[300px] transition-all group-hover:scale-105" alt="banner" />
+      </Link>
+    </div>
+  );
+};
+
+export default BannerBox;
