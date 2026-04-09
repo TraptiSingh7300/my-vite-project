@@ -48,7 +48,10 @@ const Home = () => {
               </Tabs>
             </div>
           </div>
-          <ProductsSlider items={5}/>
+          <ProductsSlider items={5} />
+        </div>
+        <div>
+          
         </div>
       </section>
 

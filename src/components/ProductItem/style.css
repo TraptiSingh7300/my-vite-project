@@ -1,0 +1,15 @@
+.productItem .title {
+  line-height: 18px;
+}
+.productItem .actions button:hover svg {
+  color: #fff !important;
+}
+.productItem .actions button svg {
+  pointer-events: none;
+}
+.productItem .title {
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides overflow text */
+  text-overflow: ellipsis; /* Adds "..." at the end if too long */
+  display: block; /* Ensures proper rendering */
+}
