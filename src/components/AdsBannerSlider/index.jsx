@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation,Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import BannerBox from "../BannerBox";
 
 const AdsBannerSlider = (props) => {
@@ -13,11 +13,7 @@ const AdsBannerSlider = (props) => {
         slidesPerView={props.items}
         spaceBetween={30}
         navigation={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Navigation,Autoplay]}
+        modules={[Navigation]}
         className="smlbtn"
       >
         <SwiperSlide>

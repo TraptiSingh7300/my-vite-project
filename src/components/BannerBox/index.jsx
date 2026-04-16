@@ -5,7 +5,7 @@ const BannerBox = (props) => {
   return (
     <div className="box overflow-hidden rounded-lg group">
       <Link to="/">
-        <img src={props.img} className="w-[300px] transition-all group-hover:scale-105" alt="banner" />
+        <img src={props.img} className="w-full transition-all group-hover:scale-105" alt="banner" />
       </Link>
     </div>
   );

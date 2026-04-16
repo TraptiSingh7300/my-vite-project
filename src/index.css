@@ -2,36 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    background-color: #f5f0f0;
-    color: rgba(0,0,0,0.8);
-    overflow-x: hidden;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f5f0f0;
+  color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
 }
 
-::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
-::-webkit-scrollbar-thumb{background: #ccc;}
-::-webkit-scrollbar-thumb:hover{background: #8c8b8b;}
-::-webkit-scrollbar-track{background: #fff;}
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c8b8b;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
 
-.container{width: 90%; margin:auto;}
+.container {
+  width: 90%;
+  margin: auto;
+}
 
-.link:hover{color: #ff5252;}
+.btn-org {
+  background: #ff5252 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 7px 20px !important;
+}
 
-.MuiBadge-badge{background-color: #ff5252 !important;}
+.link:hover {
+  color: #ff5252;
+}
 
-nav ul button{text-transform: capitalize !important;}
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
 
-nav ul button:hover{background: none !important;}
+nav ul button {
+  text-transform: capitalize !important;
+}
 
-.sliderHome{overflow: inherit !important;}
+nav ul button:hover {
+  background: none !important;
+}
+
+.sliderHome {
+  overflow: inherit !important;
+}
 
 .sliderHome .swiper-button-prev,
 .sliderHome .swiper-button-next {
@@ -41,16 +71,18 @@ nav ul button:hover{background: none !important;}
   color: #ff5252 !important;
   background: #f5f0f0 !important;
   border-radius: 100%;
-  width: 45px;  
+  width: 45px;
   height: 45px;
-  min-height:45px; 
-  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+  min-height: 45px;
+  box-shadow:
+    0 1px 3px #0000001f,
+    0 1px 2px #0000003d !important;
 }
 
 .sliderHome .swiper-button-prev svg,
-.sliderHome .swiper-button-next svg{
-    width: 30px !important;
-    height: 30px !important;
+.sliderHome .swiper-button-next svg {
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .mySwiper .swiper-button-prev,
@@ -61,40 +93,98 @@ nav ul button:hover{background: none !important;}
   color: #ff5252 !important;
   background: #f5f0f0 !important;
   border-radius: 100%;
-  width: 30px;  
+  width: 30px;
   height: 30px;
-  min-height:30px; 
-  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+  min-height: 30px;
+  box-shadow:
+    0 1px 3px #0000001f,
+    0 1px 2px #0000003d !important;
 }
 
 .mySwiper .swiper-button-prev svg,
-.mySwiper .swiper-button-next svg{
-    width: 18px !important;
-    height: 18px !important;
+.mySwiper .swiper-button-next svg {
+  width: 18px !important;
+  height: 18px !important;
 }
 
-.smlbtn .swiper-button-prev,.smlbtn .swiper-button-next{width: 30px !important; height: 30px !important; min-width: 30px !important; top: 55% !important; color: #ff5252 !important; background-color: #f5f0f0 !important; border-radius: 50% !important;}
+.smlbtn .swiper-button-prev,
+.smlbtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+  color: #ff5252 !important;
+  background-color: #f5f0f0 !important;
+  border-radius: 50% !important;
+}
 
 .smlbtn .swiper-button-prev svg,
-.smlbtn .swiper-button-next svg{
-    width: 18px !important;
-    height: 18px !important;
+.smlbtn .swiper-button-next svg {
+  width: 18px !important;
+  height: 18px !important;
 }
 
-.homeCatSlider{overflow: inherit !important;}
-
-.homeCatSlider .swiper-button-prev{
-    left: -10px !important;
+.homeCatSlider {
+  overflow: inherit !important;
 }
 
-.homeCatSlider .swiper-button-next{
-    right: -10px !important;
+.homeCatSlider .swiper-button-prev {
+  left: -10px !important;
 }
 
-.homeCatSlider .item img:hover{transform: scale(1.1);}
-.homeCatSlider .item h3:hover{color: #ff5252;}
+.homeCatSlider .swiper-button-next {
+  right: -10px !important;
+}
 
-.MuiTabs-indicator{background-color: #ff5252 !important;}
-.MuiTab-textColorPrimary.Mui-selected{color: #ff5252 !important;}
+.homeCatSlider .item img:hover {
+  transform: scale(1.1);
+}
+.homeCatSlider .item h3:hover {
+  color: #ff5252;
+}
 
-.productsSlider .swiper-wrapper{padding: 15px; margin-left: -15px; margin-right: -15px;}
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.blogSlider .swiper-button-prev,
+.blogSlider .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5252 !important;
+  background: #f5f0f0 !important;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+  box-shadow:
+    0 1px 3px #0000001f,
+    0 1px 2px #0000003d !important;
+}
+
+.blogSlider .swiper-button-prev svg,
+.blogSlider .swiper-button-next svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+footer form input::placeholder {
+  font-size: 14px;
+}
+
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.Mui-checked,
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #ff5252 !important;
+}
+
+.MuiFormControlLabel-label{font-size: 13px !important; color: rgba(0,0,0,0.8);}

@@ -5,8 +5,13 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import ProductsSlider from "../../components/ProductsSlider";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import BlogItem from "../../components/BlogItem";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -50,9 +55,7 @@ const Home = () => {
           </div>
           <ProductsSlider items={5} />
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </section>
 
       <section className="py-16 bg-white">
@@ -75,13 +78,110 @@ const Home = () => {
         </div>
       </section>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+          <h2 className="text-[20px] font-[600]">Latest Products</h2>
+          <ProductsSlider items={5} />
+
+          <AdsBannerSlider items={2} />
+        </div>
+      </section>
+
+      <section className="py-5 pt-0 bg-white">
+        <div className="container">
+          <h2 className="text-[20px] font-[600]">Featured Products</h2>
+          <ProductsSlider items={5} />
+
+          <AdsBannerSlider items={3} />
+        </div>
+      </section>
+
+      <section className="py-5 pb-8 pt-0 bg-white blogSection">
+        <div className="container">
+          <h2 className="text-[20px] font-[600] mb-4">From The Blog</h2>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            navigation={true}
+            modules={[Navigation]}
+            className="blogSlider"
+          >
+            <SwiperSlide>
+              <BlogItem
+                img={
+                  "https://res.cloudinary.com/dmynyjsmt/image/upload/v1774681767/falcon/image/vendor/xsx798dvr0nsn4pwnkn8.jpg"
+                }
+                date={"5 APRIL, 2026"}
+                text={
+                  "5 Living Room Updates That Make a Small Space Feel Premium"
+                }
+                para={
+                  "From softer textures to smarter furniture placement, these practical living room updates can instantly make a compact home look brighter, calmer and more expensive without a full redesign."
+                }
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem
+                img={
+                  "https://res.cloudinary.com/dmynyjsmt/image/upload/v1774681778/falcon/image/vendor/kj0pslgtr0vgaby2uqwm.jpg"
+                }
+                date={"4 MARCH, 2026"}
+                text={
+                  "How Immersive Tech Is Changing At-Home Entertainment"
+                }
+                para={
+                  "VR headsets and smart wearables are no longer niche gadgets. Here is what to look for in comfort, display quality, audio, and everyday usability before bringing immersive tech home."
+                }
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem
+                img={
+                  "https://res.cloudinary.com/dmynyjsmt/image/upload/v1774681789/falcon/image/vendor/d64yovtbuda4nngisjyt.jpg"
+                }
+                date={"18 MARCH, 2026"}
+                text={
+                  "Wireless Earbuds Buying Guide for Work, Travel, and Daily Use"
+                }
+                para={
+                  "The best earbuds are not only about sound quality. Fit, battery life, call clarity, and case design matter just as much when you want one pair that works through meetings, commutes, and workouts."
+                }
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem
+                img={
+                  "https://res.cloudinary.com/dmynyjsmt/image/upload/v1774681861/falcon/image/vendor/pc20r0zrfvnzayyyjz1c.jpg"
+                }
+                date={"12 FEBRUARY, 2026"}
+                text={
+                  "5 Living Room Updates That Make a Small Space Feel Premium"
+                }
+                para={
+                  "From softer textures to smarter furniture placement, these practical living room updates can instantly make a compact home look brighter, calmer, and more expensive without a full redesign."
+                }
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem
+                img={
+                  "https://res.cloudinary.com/dmynyjsmt/image/upload/v1774681897/falcon/image/vendor/m1u2d4vdno24bapqpvwl.jpg"
+                }
+                date={"4 MARCH, 2026"}
+                text={
+                  "How Immersive Tech Is Changing At-Home Entertainment"
+                }
+                para={
+                  "VR headsets and smart wearables are no longer niche gadgets. Here is what to look for in comfort, display quality, audio, and everyday usability before bringing immersive tech home."
+                }
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      
+      <Footer/>
+
     </>
   );
 };
